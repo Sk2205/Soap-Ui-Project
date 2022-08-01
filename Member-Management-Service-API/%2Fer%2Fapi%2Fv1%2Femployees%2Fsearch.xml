@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/er/api/v1/employees/search" path="/er/api/v1/employees/search" id="76305816-b906-4449-ab3c-17420cca0725" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="76305816-b906-4449-ab3c-17420cca0725fileName">%2Fer%2Fapi%2Fv1%2Femployees%2Fsearch</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="b30862ed-ef78-4ac9-b1fd-c24e149dda75" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employees" : [ {
+    "employeeIdentifier" : 3018210,
+    "firstName" : "Rignesh",
+    "middleName" : "OT",
+    "lastName" : "rajan",
+    "gender" : "Male",
+    "email" : "rajan@rsli.com",
+    "dateOfBirth" : "1960-02-05T00:00Z",
+    "customerAccountNumber" : "0130936",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "qpr Testing customer 152",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "annualSalary" : 100000.0,
+    "status" : "Active",
+    "statusDate" : "2015-07-20T15:49:04-07:00",
+    "dateOfHire" : "2022-03-01T00:00Z",
+    "modifiedDate" : "2022-03-08T00:00Z",
+    "hasBillGroupAccess" : true
+  } ],
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employees" : [ {
+    "employeeIdentifier" : 3018210,
+    "firstName" : "Rignesh",
+    "middleName" : "OT",
+    "lastName" : "rajan",
+    "gender" : "Male",
+    "email" : "rajan@rsli.com",
+    "dateOfBirth" : "1960-02-05T00:00Z",
+    "customerAccountNumber" : "0130936",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "qpr Testing customer 152",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "annualSalary" : 100000.0,
+    "status" : "Active",
+    "statusDate" : "2015-07-20T15:49:04-07:00",
+    "dateOfHire" : "2022-03-01T00:00Z",
+    "modifiedDate" : "2022-03-08T00:00Z",
+    "hasBillGroupAccess" : true
+  } ],
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>204</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>204</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>204</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Forbidden</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Forbidden</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:description>Forbidden</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 3018523,
+  "firstName" : "Rignesh",
+  "lastName" : "rajan",
+  "dob" : "2015-07-20T15:49:04-07:00"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 3018523,
+  "firstName" : "Rignesh",
+  "lastName" : "rajan",
+  "dob" : "2015-07-20T15:49:04-07:00"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 3018523,
+  "firstName" : "Rignesh",
+  "lastName" : "rajan",
+  "dob" : "2015-07-20T15:49:04-07:00"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 3018523,
+  "firstName" : "Rignesh",
+  "lastName" : "rajan",
+  "dob" : "2015-07-20T15:49:04-07:00"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="acfbc1f2-64a9-4602-95ec-e7da7553451e" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 3018523,\r
+  "firstName" : "Rignesh",\r
+  "lastName" : "rajan",\r
+  "dob" : "2015-07-20T15:49:04-07:00"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="99693ab7-4b90-4bec-8cec-9029bc805038" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 3018523,\r
+  "firstName" : "Rignesh",\r
+  "lastName" : "rajan",\r
+  "dob" : "2015-07-20T15:49:04-07:00"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="022d22f9-0cda-45e0-a624-116c6f3a7bff" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 3018523,\r
+  "firstName" : "Rignesh",\r
+  "lastName" : "rajan",\r
+  "dob" : "2015-07-20T15:49:04-07:00"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="65fd53a0-47ec-4a84-bfaa-d2d46793e006" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 3018523,\r
+  "firstName" : "Rignesh",\r
+  "lastName" : "rajan",\r
+  "dob" : "2015-07-20T15:49:04-07:00"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

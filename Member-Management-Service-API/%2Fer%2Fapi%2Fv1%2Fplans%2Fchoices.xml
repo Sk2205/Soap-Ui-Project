@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/er/api/v1/plans/choices" path="/er/api/v1/plans/choices" id="d57af144-9e96-4486-a679-06a2c8627f1f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d57af144-9e96-4486-a679-06a2c8627f1ffileName">%2Fer%2Fapi%2Fv1%2Fplans%2Fchoices</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="943c84a9-0d0b-4908-8528-5ae0fdb34689" method="GET">
+    <con:description>Get the Choice information</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>EmployeeIdentifier</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Employee Identifier</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>BillGroupNumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Bill Group Number</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>active</con:name>
+        <con:value>false</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>false</con:default>
+        <con:description>active</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>terminated</con:name>
+        <con:value>false</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>false</con:default>
+        <con:description>terminated</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>eligible</con:name>
+        <con:value>true</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>true</con:default>
+        <con:description>eligible</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "coveragesGroup" : [ {
+    "productGroup" : "Voluntary Group Term Life",
+    "sequence" : 3,
+    "productName" : "VG",
+    "productType" : "Life",
+    "isVCIFutureTerminated" : true,
+    "vciEligibilty" : {
+      "employeeEligibility" : "NoAnswer",
+      "spouseEligibility" : "NoAnswer",
+      "childrenEligibilty" : "NoAnswer",
+      "situsState" : "NH"
+    },
+    "choices" : [ {
+      "billgroupNumber" : [ "string" ],
+      "policyNumber" : "VG005041",
+      "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+      "coverageCode" : "1100",
+      "coverageName" : "Basic Life",
+      "displayCoverageName" : "Voluntary Term Life",
+      "vcType" : "Employee",
+      "sequence" : 3.1,
+      "policyDisablePlanGUID" : [ "string" ],
+      "classes" : [ {
+        "classCode" : "01",
+        "classDesc" : "Each Active Full-Time",
+        "classDescOther" : "Manager",
+        "plans" : [ {
+          "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+          "sequence" : 1.100000023841858,
+          "planType" : "Core",
+          "scheduleType" : "Increment",
+          "benefitOption" : [ {
+            "title" : "$ 0",
+            "benefitAmount" : 0.0,
+            "salaryFactor" : 1.100000023841858,
+            "isElected" : true
+          } ],
+          "subplans" : [ {
+            "plan" : "string",
+            "isElected" : true,
+            "appliesTo" : 0
+          } ],
+          "status" : "active",
+          "terminationDate" : "2015-07-20",
+          "eoiRequired" : true,
+          "parent" : true,
+          "isLateEntrantFromDB" : true,
+          "premiumAmount" : 10.0,
+          "benefitAmount" : 30000.0,
+          "coverageAmount" : 30000.0,
+          "individualTerminationDateRule" : "203",
+          "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+          "effectiveDate" : "2015-07-20",
+          "isAgeBanded" : false,
+          "isGenderBanded" : true,
+          "isTobbaccoRated" : false,
+          "isStateCoverage" : false,
+          "isFamilyCoverage" : true,
+          "serviceWaitingPeriodOption" : "No Differentiation",
+          "serviceWaitingPeriodOtherDesc" : "string",
+          "serviceWaitingPeriod" : [ {
+            "option" : "string",
+            "value" : "string"
+          } ],
+          "rules" : {
+            "checkedRules" : [ "string" ],
+            "unCheckedRules" : [ "string" ],
+            "disableCheckedRules" : [ "string" ],
+            "enableUnCheckedRules" : [ "string" ],
+            "enforceCap" : [ "string" ],
+            "conditionalUnCapTarget" : [ "string" ],
+            "conditionalUnCapDependency" : "string",
+            "associatedPlanGuid" : [ "string" ],
+            "benefitMatch" : [ "string" ],
+            "enable" : [ "string" ],
+            "enabledBy" : [ "string" ],
+            "optional" : true
+          },
+          "isElected" : true,
+          "enabledDefault" : false,
+          "initialEnforceCap" : 0.0,
+          "terminationSequence" : "0.0"
+        } ],
+        "isElected" : true
+      } ],
+      "isElected" : true
+    } ],
+    "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "coveragesGroup" : [ {
+    "productGroup" : "Voluntary Group Term Life",
+    "sequence" : 3,
+    "productName" : "VG",
+    "productType" : "Life",
+    "isVCIFutureTerminated" : true,
+    "vciEligibilty" : {
+      "employeeEligibility" : "NoAnswer",
+      "spouseEligibility" : "NoAnswer",
+      "childrenEligibilty" : "NoAnswer",
+      "situsState" : "NH"
+    },
+    "choices" : [ {
+      "billgroupNumber" : [ "string" ],
+      "policyNumber" : "VG005041",
+      "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+      "coverageCode" : "1100",
+      "coverageName" : "Basic Life",
+      "displayCoverageName" : "Voluntary Term Life",
+      "vcType" : "Employee",
+      "sequence" : 3.1,
+      "policyDisablePlanGUID" : [ "string" ],
+      "classes" : [ {
+        "classCode" : "01",
+        "classDesc" : "Each Active Full-Time",
+        "classDescOther" : "Manager",
+        "plans" : [ {
+          "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+          "sequence" : 1.100000023841858,
+          "planType" : "Core",
+          "scheduleType" : "Increment",
+          "benefitOption" : [ {
+            "title" : "$ 0",
+            "benefitAmount" : 0.0,
+            "salaryFactor" : 1.100000023841858,
+            "isElected" : true
+          } ],
+          "subplans" : [ {
+            "plan" : "string",
+            "isElected" : true,
+            "appliesTo" : 0
+          } ],
+          "status" : "active",
+          "terminationDate" : "2015-07-20",
+          "eoiRequired" : true,
+          "parent" : true,
+          "isLateEntrantFromDB" : true,
+          "premiumAmount" : 10.0,
+          "benefitAmount" : 30000.0,
+          "coverageAmount" : 30000.0,
+          "individualTerminationDateRule" : "203",
+          "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+          "effectiveDate" : "2015-07-20",
+          "isAgeBanded" : false,
+          "isGenderBanded" : true,
+          "isTobbaccoRated" : false,
+          "isStateCoverage" : false,
+          "isFamilyCoverage" : true,
+          "serviceWaitingPeriodOption" : "No Differentiation",
+          "serviceWaitingPeriodOtherDesc" : "string",
+          "serviceWaitingPeriod" : [ {
+            "option" : "string",
+            "value" : "string"
+          } ],
+          "rules" : {
+            "checkedRules" : [ "string" ],
+            "unCheckedRules" : [ "string" ],
+            "disableCheckedRules" : [ "string" ],
+            "enableUnCheckedRules" : [ "string" ],
+            "enforceCap" : [ "string" ],
+            "conditionalUnCapTarget" : [ "string" ],
+            "conditionalUnCapDependency" : "string",
+            "associatedPlanGuid" : [ "string" ],
+            "benefitMatch" : [ "string" ],
+            "enable" : [ "string" ],
+            "enabledBy" : [ "string" ],
+            "optional" : true
+          },
+          "isElected" : true,
+          "enabledDefault" : false,
+          "initialEnforceCap" : 0.0,
+          "terminationSequence" : "0.0"
+        } ],
+        "isElected" : true
+      } ],
+      "isElected" : true
+    } ],
+    "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="ab51a714-e123-4c8e-8533-1e3e2a7bcdce" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

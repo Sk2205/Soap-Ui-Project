@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/Organizations" path="/api/Organizations" id="265a35b3-8d56-4a00-b694-8c8941937f42" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="265a35b3-8d56-4a00-b694-8c8941937f42fileName">%2Fapi%2FOrganizations</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetAllOrganizations" id="d1056405-0df0-4306-b0d7-272fd8660138" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>rsluId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>customerNumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>zeroAgentCode</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[NOT IMPLEMENTED]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "orgId" : "string",
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parametervalue" : "string"
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "orgId" : "string",
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parametervalue" : "string"
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="b2d4b616-d62d-4194-a912-464d2b597984" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="CreateOrganizations" id="e119b79e-5bb2-4068-aef7-76e3f49178b9" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "orgId" : "string",
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parametervalue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "orgId" : "string",
+  "name" : "string",
+  "orgType" : "string",
+  "customerNumber" : "string",
+  "zeroAgentCode" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parametervalue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e448c38b-b94d-4c03-96ed-fea9f2616ce9" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "name" : "string",\r
+  "orgType" : "string",\r
+  "customerNumber" : "string",\r
+  "zeroAgentCode" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="4301b6df-054e-4480-be78-1794d0684121" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "name" : "string",\r
+  "orgType" : "string",\r
+  "customerNumber" : "string",\r
+  "zeroAgentCode" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="6415c004-3477-4ba2-bdcf-6deea1a9d3f2" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "name" : "string",\r
+  "orgType" : "string",\r
+  "customerNumber" : "string",\r
+  "zeroAgentCode" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="be3840c5-00d6-4841-a929-22ca42a0ee09" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "name" : "string",\r
+  "orgType" : "string",\r
+  "customerNumber" : "string",\r
+  "zeroAgentCode" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

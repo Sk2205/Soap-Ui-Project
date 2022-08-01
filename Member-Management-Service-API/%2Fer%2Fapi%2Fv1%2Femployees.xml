@@ -1,0 +1,3433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/er/api/v1/employees" path="/er/api/v1/employees" id="5d329805-0bbd-4d6b-b79b-04e1973fd00d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5d329805-0bbd-4d6b-b79b-04e1973fd00dfileName">%2Fer%2Fapi%2Fv1%2Femployees</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="203ccc28-6225-4064-979d-f13f560c7328" method="GET">
+    <con:description>Get all the Employees Information for a Customer ID (Customer Account Number) and Summary from header</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>summary</con:name>
+        <con:value>true</con:value>
+        <con:style>QUERY</con:style>
+        <con:default>true</con:default>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "count" : 177,
+  "employeeSummaries" : [ {
+    "id" : "2145626",
+    "firstName" : "Walter",
+    "lastName" : "Andrews",
+    "middleInitial" : "OT",
+    "status" : "Active",
+    "dateOfHire" : "12/03/2012 00:00:00",
+    "department" : "CFI",
+    "location" : "CFI",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "cFarland Ford",
+    "terminationDate" : "05/07/2019 00:00:00",
+    "coverageCount" : 2,
+    "coverages" : [ {
+      "coverageName" : "Basic Life",
+      "displayCoverageName" : "Voluntary Term Life",
+      "policyNumber" : "GL156782",
+      "sequence" : 1.1,
+      "productGroupName" : "Group Life"
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "count" : 177,
+  "employeeSummaries" : [ {
+    "id" : "2145626",
+    "firstName" : "Walter",
+    "lastName" : "Andrews",
+    "middleInitial" : "OT",
+    "status" : "Active",
+    "dateOfHire" : "12/03/2012 00:00:00",
+    "department" : "CFI",
+    "location" : "CFI",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "cFarland Ford",
+    "terminationDate" : "05/07/2019 00:00:00",
+    "coverageCount" : 2,
+    "coverages" : [ {
+      "coverageName" : "Basic Life",
+      "displayCoverageName" : "Voluntary Term Life",
+      "policyNumber" : "GL156782",
+      "sequence" : 1.1,
+      "productGroupName" : "Group Life"
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6afe4c43-7dde-473b-b9c8-751fd2e43906" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="POST" id="26281975-61b7-4948-89e0-a953b65a972e" method="POST">
+    <con:description>Add an Employee Information by passing JWT Token (of a Customer Account Number) from Authorization header</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "string",
+  "dateOfBirth" : "string",
+  "homePhone" : "string",
+  "workPhone" : "string",
+  "email" : "string",
+  "hasAgeBanded" : true,
+  "hasGenderBanded" : true,
+  "coveragesCount" : 0,
+  "vciEligible" : "string",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "coveragesGroupModel" : {
+    "coveragesGroup" : [ {
+      "productGroup" : "Voluntary Group Term Life",
+      "sequence" : 3,
+      "productName" : "VG",
+      "productType" : "Life",
+      "isVCIFutureTerminated" : true,
+      "vciEligibilty" : {
+        "employeeEligibility" : "NoAnswer",
+        "spouseEligibility" : "NoAnswer",
+        "childrenEligibilty" : "NoAnswer",
+        "situsState" : "NH"
+      },
+      "choices" : [ {
+        "billgroupNumber" : [ "string" ],
+        "policyNumber" : "VG005041",
+        "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+        "coverageCode" : "1100",
+        "coverageName" : "Basic Life",
+        "displayCoverageName" : "Voluntary Term Life",
+        "vcType" : "Employee",
+        "sequence" : 3.1,
+        "policyDisablePlanGUID" : [ "string" ],
+        "classes" : [ {
+          "classCode" : "01",
+          "classDesc" : "Each Active Full-Time",
+          "classDescOther" : "Manager",
+          "plans" : [ {
+            "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+            "sequence" : 1.100000023841858,
+            "planType" : "Core",
+            "scheduleType" : "Increment",
+            "benefitOption" : [ {
+              "title" : "$ 0",
+              "benefitAmount" : 0.0,
+              "salaryFactor" : 1.100000023841858,
+              "isElected" : true
+            } ],
+            "subplans" : [ {
+              "plan" : "string",
+              "isElected" : true,
+              "appliesTo" : 0
+            } ],
+            "status" : "active",
+            "terminationDate" : "2015-07-20",
+            "eoiRequired" : true,
+            "parent" : true,
+            "isLateEntrantFromDB" : true,
+            "premiumAmount" : 10.0,
+            "benefitAmount" : 30000.0,
+            "coverageAmount" : 30000.0,
+            "individualTerminationDateRule" : "203",
+            "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+            "effectiveDate" : "2015-07-20",
+            "isAgeBanded" : false,
+            "isGenderBanded" : true,
+            "isTobbaccoRated" : false,
+            "isStateCoverage" : false,
+            "isFamilyCoverage" : true,
+            "serviceWaitingPeriodOption" : "No Differentiation",
+            "serviceWaitingPeriodOtherDesc" : "string",
+            "serviceWaitingPeriod" : [ {
+              "option" : "string",
+              "value" : "string"
+            } ],
+            "rules" : {
+              "checkedRules" : [ "string" ],
+              "unCheckedRules" : [ "string" ],
+              "disableCheckedRules" : [ "string" ],
+              "enableUnCheckedRules" : [ "string" ],
+              "enforceCap" : [ "string" ],
+              "conditionalUnCapTarget" : [ "string" ],
+              "conditionalUnCapDependency" : "string",
+              "associatedPlanGuid" : [ "string" ],
+              "benefitMatch" : [ "string" ],
+              "enable" : [ "string" ],
+              "enabledBy" : [ "string" ],
+              "optional" : true
+            },
+            "isElected" : true,
+            "enabledDefault" : false,
+            "initialEnforceCap" : 0.0,
+            "terminationSequence" : "0.0"
+          } ],
+          "isElected" : true
+        } ],
+        "isElected" : true
+      } ],
+      "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+    } ]
+  },
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "string",
+  "dateOfBirth" : "string",
+  "homePhone" : "string",
+  "workPhone" : "string",
+  "email" : "string",
+  "hasAgeBanded" : true,
+  "hasGenderBanded" : true,
+  "coveragesCount" : 0,
+  "vciEligible" : "string",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "coveragesGroupModel" : {
+    "coveragesGroup" : [ {
+      "productGroup" : "Voluntary Group Term Life",
+      "sequence" : 3,
+      "productName" : "VG",
+      "productType" : "Life",
+      "isVCIFutureTerminated" : true,
+      "vciEligibilty" : {
+        "employeeEligibility" : "NoAnswer",
+        "spouseEligibility" : "NoAnswer",
+        "childrenEligibilty" : "NoAnswer",
+        "situsState" : "NH"
+      },
+      "choices" : [ {
+        "billgroupNumber" : [ "string" ],
+        "policyNumber" : "VG005041",
+        "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+        "coverageCode" : "1100",
+        "coverageName" : "Basic Life",
+        "displayCoverageName" : "Voluntary Term Life",
+        "vcType" : "Employee",
+        "sequence" : 3.1,
+        "policyDisablePlanGUID" : [ "string" ],
+        "classes" : [ {
+          "classCode" : "01",
+          "classDesc" : "Each Active Full-Time",
+          "classDescOther" : "Manager",
+          "plans" : [ {
+            "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+            "sequence" : 1.100000023841858,
+            "planType" : "Core",
+            "scheduleType" : "Increment",
+            "benefitOption" : [ {
+              "title" : "$ 0",
+              "benefitAmount" : 0.0,
+              "salaryFactor" : 1.100000023841858,
+              "isElected" : true
+            } ],
+            "subplans" : [ {
+              "plan" : "string",
+              "isElected" : true,
+              "appliesTo" : 0
+            } ],
+            "status" : "active",
+            "terminationDate" : "2015-07-20",
+            "eoiRequired" : true,
+            "parent" : true,
+            "isLateEntrantFromDB" : true,
+            "premiumAmount" : 10.0,
+            "benefitAmount" : 30000.0,
+            "coverageAmount" : 30000.0,
+            "individualTerminationDateRule" : "203",
+            "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+            "effectiveDate" : "2015-07-20",
+            "isAgeBanded" : false,
+            "isGenderBanded" : true,
+            "isTobbaccoRated" : false,
+            "isStateCoverage" : false,
+            "isFamilyCoverage" : true,
+            "serviceWaitingPeriodOption" : "No Differentiation",
+            "serviceWaitingPeriodOtherDesc" : "string",
+            "serviceWaitingPeriod" : [ {
+              "option" : "string",
+              "value" : "string"
+            } ],
+            "rules" : {
+              "checkedRules" : [ "string" ],
+              "unCheckedRules" : [ "string" ],
+              "disableCheckedRules" : [ "string" ],
+              "enableUnCheckedRules" : [ "string" ],
+              "enforceCap" : [ "string" ],
+              "conditionalUnCapTarget" : [ "string" ],
+              "conditionalUnCapDependency" : "string",
+              "associatedPlanGuid" : [ "string" ],
+              "benefitMatch" : [ "string" ],
+              "enable" : [ "string" ],
+              "enabledBy" : [ "string" ],
+              "optional" : true
+            },
+            "isElected" : true,
+            "enabledDefault" : false,
+            "initialEnforceCap" : 0.0,
+            "terminationSequence" : "0.0"
+          } ],
+          "isElected" : true
+        } ],
+        "isElected" : true
+      } ],
+      "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+    } ]
+  },
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:description>Conflict</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:description>Conflict</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:description>Conflict</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="2291a2f8-13b6-42e9-8d7a-4770f8f32406" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="08c3bf55-9590-4ba3-84c5-4cc59171008e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="6542e9d3-31aa-41c7-b216-fe4034a6a891" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="2736fff2-e977-4b8e-bf7c-c0f9141868aa" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="PUT" id="e0ed7173-6c40-4ace-8c0f-e7c9167001f3" method="PUT">
+    <con:description>Add an Employee Information by passing JWT Token (of a Customer Account Number) from Authorization header</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "string",
+  "dateOfBirth" : "string",
+  "homePhone" : "string",
+  "workPhone" : "string",
+  "email" : "string",
+  "hasAgeBanded" : true,
+  "hasGenderBanded" : true,
+  "coveragesCount" : 0,
+  "vciEligible" : "string",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "coveragesGroupModel" : {
+    "coveragesGroup" : [ {
+      "productGroup" : "Voluntary Group Term Life",
+      "sequence" : 3,
+      "productName" : "VG",
+      "productType" : "Life",
+      "isVCIFutureTerminated" : true,
+      "vciEligibilty" : {
+        "employeeEligibility" : "NoAnswer",
+        "spouseEligibility" : "NoAnswer",
+        "childrenEligibilty" : "NoAnswer",
+        "situsState" : "NH"
+      },
+      "choices" : [ {
+        "billgroupNumber" : [ "string" ],
+        "policyNumber" : "VG005041",
+        "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+        "coverageCode" : "1100",
+        "coverageName" : "Basic Life",
+        "displayCoverageName" : "Voluntary Term Life",
+        "vcType" : "Employee",
+        "sequence" : 3.1,
+        "policyDisablePlanGUID" : [ "string" ],
+        "classes" : [ {
+          "classCode" : "01",
+          "classDesc" : "Each Active Full-Time",
+          "classDescOther" : "Manager",
+          "plans" : [ {
+            "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+            "sequence" : 1.100000023841858,
+            "planType" : "Core",
+            "scheduleType" : "Increment",
+            "benefitOption" : [ {
+              "title" : "$ 0",
+              "benefitAmount" : 0.0,
+              "salaryFactor" : 1.100000023841858,
+              "isElected" : true
+            } ],
+            "subplans" : [ {
+              "plan" : "string",
+              "isElected" : true,
+              "appliesTo" : 0
+            } ],
+            "status" : "active",
+            "terminationDate" : "2015-07-20",
+            "eoiRequired" : true,
+            "parent" : true,
+            "isLateEntrantFromDB" : true,
+            "premiumAmount" : 10.0,
+            "benefitAmount" : 30000.0,
+            "coverageAmount" : 30000.0,
+            "individualTerminationDateRule" : "203",
+            "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+            "effectiveDate" : "2015-07-20",
+            "isAgeBanded" : false,
+            "isGenderBanded" : true,
+            "isTobbaccoRated" : false,
+            "isStateCoverage" : false,
+            "isFamilyCoverage" : true,
+            "serviceWaitingPeriodOption" : "No Differentiation",
+            "serviceWaitingPeriodOtherDesc" : "string",
+            "serviceWaitingPeriod" : [ {
+              "option" : "string",
+              "value" : "string"
+            } ],
+            "rules" : {
+              "checkedRules" : [ "string" ],
+              "unCheckedRules" : [ "string" ],
+              "disableCheckedRules" : [ "string" ],
+              "enableUnCheckedRules" : [ "string" ],
+              "enforceCap" : [ "string" ],
+              "conditionalUnCapTarget" : [ "string" ],
+              "conditionalUnCapDependency" : "string",
+              "associatedPlanGuid" : [ "string" ],
+              "benefitMatch" : [ "string" ],
+              "enable" : [ "string" ],
+              "enabledBy" : [ "string" ],
+              "optional" : true
+            },
+            "isElected" : true,
+            "enabledDefault" : false,
+            "initialEnforceCap" : 0.0,
+            "terminationSequence" : "0.0"
+          } ],
+          "isElected" : true
+        } ],
+        "isElected" : true
+      } ],
+      "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+    } ]
+  },
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>201</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "string",
+  "dateOfBirth" : "string",
+  "homePhone" : "string",
+  "workPhone" : "string",
+  "email" : "string",
+  "hasAgeBanded" : true,
+  "hasGenderBanded" : true,
+  "coveragesCount" : 0,
+  "vciEligible" : "string",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "coveragesGroupModel" : {
+    "coveragesGroup" : [ {
+      "productGroup" : "Voluntary Group Term Life",
+      "sequence" : 3,
+      "productName" : "VG",
+      "productType" : "Life",
+      "isVCIFutureTerminated" : true,
+      "vciEligibilty" : {
+        "employeeEligibility" : "NoAnswer",
+        "spouseEligibility" : "NoAnswer",
+        "childrenEligibilty" : "NoAnswer",
+        "situsState" : "NH"
+      },
+      "choices" : [ {
+        "billgroupNumber" : [ "string" ],
+        "policyNumber" : "VG005041",
+        "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+        "coverageCode" : "1100",
+        "coverageName" : "Basic Life",
+        "displayCoverageName" : "Voluntary Term Life",
+        "vcType" : "Employee",
+        "sequence" : 3.1,
+        "policyDisablePlanGUID" : [ "string" ],
+        "classes" : [ {
+          "classCode" : "01",
+          "classDesc" : "Each Active Full-Time",
+          "classDescOther" : "Manager",
+          "plans" : [ {
+            "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+            "sequence" : 1.100000023841858,
+            "planType" : "Core",
+            "scheduleType" : "Increment",
+            "benefitOption" : [ {
+              "title" : "$ 0",
+              "benefitAmount" : 0.0,
+              "salaryFactor" : 1.100000023841858,
+              "isElected" : true
+            } ],
+            "subplans" : [ {
+              "plan" : "string",
+              "isElected" : true,
+              "appliesTo" : 0
+            } ],
+            "status" : "active",
+            "terminationDate" : "2015-07-20",
+            "eoiRequired" : true,
+            "parent" : true,
+            "isLateEntrantFromDB" : true,
+            "premiumAmount" : 10.0,
+            "benefitAmount" : 30000.0,
+            "coverageAmount" : 30000.0,
+            "individualTerminationDateRule" : "203",
+            "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+            "effectiveDate" : "2015-07-20",
+            "isAgeBanded" : false,
+            "isGenderBanded" : true,
+            "isTobbaccoRated" : false,
+            "isStateCoverage" : false,
+            "isFamilyCoverage" : true,
+            "serviceWaitingPeriodOption" : "No Differentiation",
+            "serviceWaitingPeriodOtherDesc" : "string",
+            "serviceWaitingPeriod" : [ {
+              "option" : "string",
+              "value" : "string"
+            } ],
+            "rules" : {
+              "checkedRules" : [ "string" ],
+              "unCheckedRules" : [ "string" ],
+              "disableCheckedRules" : [ "string" ],
+              "enableUnCheckedRules" : [ "string" ],
+              "enforceCap" : [ "string" ],
+              "conditionalUnCapTarget" : [ "string" ],
+              "conditionalUnCapDependency" : "string",
+              "associatedPlanGuid" : [ "string" ],
+              "benefitMatch" : [ "string" ],
+              "enable" : [ "string" ],
+              "enabledBy" : [ "string" ],
+              "optional" : true
+            },
+            "isElected" : true,
+            "enabledDefault" : false,
+            "initialEnforceCap" : 0.0,
+            "terminationSequence" : "0.0"
+          } ],
+          "isElected" : true
+        } ],
+        "isElected" : true
+      } ],
+      "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+    } ]
+  },
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "string",
+  "dateOfBirth" : "string",
+  "homePhone" : "string",
+  "workPhone" : "string",
+  "email" : "string",
+  "hasAgeBanded" : true,
+  "hasGenderBanded" : true,
+  "coveragesCount" : 0,
+  "vciEligible" : "string",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "coveragesGroupModel" : {
+    "coveragesGroup" : [ {
+      "productGroup" : "Voluntary Group Term Life",
+      "sequence" : 3,
+      "productName" : "VG",
+      "productType" : "Life",
+      "isVCIFutureTerminated" : true,
+      "vciEligibilty" : {
+        "employeeEligibility" : "NoAnswer",
+        "spouseEligibility" : "NoAnswer",
+        "childrenEligibilty" : "NoAnswer",
+        "situsState" : "NH"
+      },
+      "choices" : [ {
+        "billgroupNumber" : [ "string" ],
+        "policyNumber" : "VG005041",
+        "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+        "coverageCode" : "1100",
+        "coverageName" : "Basic Life",
+        "displayCoverageName" : "Voluntary Term Life",
+        "vcType" : "Employee",
+        "sequence" : 3.1,
+        "policyDisablePlanGUID" : [ "string" ],
+        "classes" : [ {
+          "classCode" : "01",
+          "classDesc" : "Each Active Full-Time",
+          "classDescOther" : "Manager",
+          "plans" : [ {
+            "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+            "sequence" : 1.100000023841858,
+            "planType" : "Core",
+            "scheduleType" : "Increment",
+            "benefitOption" : [ {
+              "title" : "$ 0",
+              "benefitAmount" : 0.0,
+              "salaryFactor" : 1.100000023841858,
+              "isElected" : true
+            } ],
+            "subplans" : [ {
+              "plan" : "string",
+              "isElected" : true,
+              "appliesTo" : 0
+            } ],
+            "status" : "active",
+            "terminationDate" : "2015-07-20",
+            "eoiRequired" : true,
+            "parent" : true,
+            "isLateEntrantFromDB" : true,
+            "premiumAmount" : 10.0,
+            "benefitAmount" : 30000.0,
+            "coverageAmount" : 30000.0,
+            "individualTerminationDateRule" : "203",
+            "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+            "effectiveDate" : "2015-07-20",
+            "isAgeBanded" : false,
+            "isGenderBanded" : true,
+            "isTobbaccoRated" : false,
+            "isStateCoverage" : false,
+            "isFamilyCoverage" : true,
+            "serviceWaitingPeriodOption" : "No Differentiation",
+            "serviceWaitingPeriodOtherDesc" : "string",
+            "serviceWaitingPeriod" : [ {
+              "option" : "string",
+              "value" : "string"
+            } ],
+            "rules" : {
+              "checkedRules" : [ "string" ],
+              "unCheckedRules" : [ "string" ],
+              "disableCheckedRules" : [ "string" ],
+              "enableUnCheckedRules" : [ "string" ],
+              "enforceCap" : [ "string" ],
+              "conditionalUnCapTarget" : [ "string" ],
+              "conditionalUnCapDependency" : "string",
+              "associatedPlanGuid" : [ "string" ],
+              "benefitMatch" : [ "string" ],
+              "enable" : [ "string" ],
+              "enabledBy" : [ "string" ],
+              "optional" : true
+            },
+            "isElected" : true,
+            "enabledDefault" : false,
+            "initialEnforceCap" : 0.0,
+            "terminationSequence" : "0.0"
+          } ],
+          "isElected" : true
+        } ],
+        "isElected" : true
+      } ],
+      "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+    } ]
+  },
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "string",
+  "dateOfBirth" : "string",
+  "homePhone" : "string",
+  "workPhone" : "string",
+  "email" : "string",
+  "hasAgeBanded" : true,
+  "hasGenderBanded" : true,
+  "coveragesCount" : 0,
+  "vciEligible" : "string",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "coveragesGroupModel" : {
+    "coveragesGroup" : [ {
+      "productGroup" : "Voluntary Group Term Life",
+      "sequence" : 3,
+      "productName" : "VG",
+      "productType" : "Life",
+      "isVCIFutureTerminated" : true,
+      "vciEligibilty" : {
+        "employeeEligibility" : "NoAnswer",
+        "spouseEligibility" : "NoAnswer",
+        "childrenEligibilty" : "NoAnswer",
+        "situsState" : "NH"
+      },
+      "choices" : [ {
+        "billgroupNumber" : [ "string" ],
+        "policyNumber" : "VG005041",
+        "policyGroupGUID" : "8509c0c6-edbd-41cd-9c4f-670093694f7c",
+        "coverageCode" : "1100",
+        "coverageName" : "Basic Life",
+        "displayCoverageName" : "Voluntary Term Life",
+        "vcType" : "Employee",
+        "sequence" : 3.1,
+        "policyDisablePlanGUID" : [ "string" ],
+        "classes" : [ {
+          "classCode" : "01",
+          "classDesc" : "Each Active Full-Time",
+          "classDescOther" : "Manager",
+          "plans" : [ {
+            "planGUID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb",
+            "sequence" : 1.100000023841858,
+            "planType" : "Core",
+            "scheduleType" : "Increment",
+            "benefitOption" : [ {
+              "title" : "$ 0",
+              "benefitAmount" : 0.0,
+              "salaryFactor" : 1.100000023841858,
+              "isElected" : true
+            } ],
+            "subplans" : [ {
+              "plan" : "string",
+              "isElected" : true,
+              "appliesTo" : 0
+            } ],
+            "status" : "active",
+            "terminationDate" : "2015-07-20",
+            "eoiRequired" : true,
+            "parent" : true,
+            "isLateEntrantFromDB" : true,
+            "premiumAmount" : 10.0,
+            "benefitAmount" : 30000.0,
+            "coverageAmount" : 30000.0,
+            "individualTerminationDateRule" : "203",
+            "employeeEffectiveDateRule" : "Present: 140\nFuture: 140",
+            "effectiveDate" : "2015-07-20",
+            "isAgeBanded" : false,
+            "isGenderBanded" : true,
+            "isTobbaccoRated" : false,
+            "isStateCoverage" : false,
+            "isFamilyCoverage" : true,
+            "serviceWaitingPeriodOption" : "No Differentiation",
+            "serviceWaitingPeriodOtherDesc" : "string",
+            "serviceWaitingPeriod" : [ {
+              "option" : "string",
+              "value" : "string"
+            } ],
+            "rules" : {
+              "checkedRules" : [ "string" ],
+              "unCheckedRules" : [ "string" ],
+              "disableCheckedRules" : [ "string" ],
+              "enableUnCheckedRules" : [ "string" ],
+              "enforceCap" : [ "string" ],
+              "conditionalUnCapTarget" : [ "string" ],
+              "conditionalUnCapDependency" : "string",
+              "associatedPlanGuid" : [ "string" ],
+              "benefitMatch" : [ "string" ],
+              "enable" : [ "string" ],
+              "enabledBy" : [ "string" ],
+              "optional" : true
+            },
+            "isElected" : true,
+            "enabledDefault" : false,
+            "initialEnforceCap" : 0.0,
+            "terminationSequence" : "0.0"
+          } ],
+          "isElected" : true
+        } ],
+        "isElected" : true
+      } ],
+      "stateCoverageGroupGuidID" : "a424cb4f-fb6d-459b-93eb-29e5e0f8c1cb"
+    } ]
+  },
+  "messages" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:description>Conflict</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:description>Conflict</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:description>Conflict</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "employeeIdentifier" : 0,
+  "employeeName" : {
+    "firstName" : "Test ",
+    "middleName" : "OT",
+    "lastName" : "Reddy"
+  },
+  "gender" : "Male",
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+  "homePhone" : "7817079040",
+  "workPhone" : "7817079999",
+  "email" : "test@rsli.com",
+  "hasAgeBanded" : false,
+  "hasGenderBanded" : false,
+  "coveragesCount" : 2,
+  "vciEligible" : "No Answer",
+  "tobaccoInformation" : {
+    "isTobaccoUser" : false,
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+    "tobaccoUseInLastYear" : false
+  },
+  "employmentInformation" : {
+    "annualSalary" : 10000.0,
+    "status" : "Active",
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",
+    "terminationDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "customerInformation" : {
+    "customerAccountNumber" : "0459084",
+    "billGroupNumber" : "01000001",
+    "billGroupName" : "Testing BG Data 1",
+    "locationDivisionNumber" : "CFI",
+    "locationDivisionName" : "CFI",
+    "departmentNumber" : "CFI",
+    "departmentName" : "CFI",
+    "situsState" : "CA"
+  },
+  "dependents" : [ {
+    "dependentIdentifier" : "0",
+    "dependentName" : {
+      "firstName" : "Test ",
+      "middleName" : "OT",
+      "lastName" : "Reddy"
+    },
+    "relationship" : "Spouse",
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",
+    "gender" : "Female",
+    "isTerminated" : false,
+    "vciEligible" : "NoAnswer",
+    "tobaccoInformation" : {
+      "isTobaccoUser" : false,
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",
+      "tobaccoUseInLastYear" : false
+    }
+  } ],
+  "elections" : [ {
+    "electionIdentifier" : 2818353,
+    "policyNumber" : "GL156865",
+    "classCode" : "1",
+    "coverageCode" : "01",
+    "coverageName" : "Basic Life",
+    "displayCoverageName" : "Voluntary Term Life",
+    "vcType" : "Employee",
+    "planType" : "Core",
+    "scheduleType" : "Salary Multiplier",
+    "benefitAmount" : 10000.0,
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",
+    "electionDate" : "2015-07-20T15:49:04-07:00",
+    "salaryFactor" : 1.0,
+    "terminationDate" : "2015-07-20T15:49:04-07:00",
+    "subPlan" : "Plan A",
+    "appliesTo" : "Employee Family",
+    "status" : "Active",
+    "premiumAmount" : 10.81,
+    "employeeType" : "No Differentiation",
+    "lifeEventType" : "null",
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",
+    "individualTerminationDateRule" : "The Date",
+    "serviceWaitingPeriodOption" : "None"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="e14b3f29-b581-4a10-b674-e25a835c497e" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="04c4aecc-cf52-4ec6-9738-847ef01c1b8b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="188c500d-3483-40f2-b515-109bbe0c8a25" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="4c73f8e7-c7bd-4994-914f-ce6bb370a6f9" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "employeeIdentifier" : 0,\r
+  "employeeName" : {\r
+    "firstName" : "Test ",\r
+    "middleName" : "OT",\r
+    "lastName" : "Reddy"\r
+  },\r
+  "gender" : "Male",\r
+  "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+  "homePhone" : "7817079040",\r
+  "workPhone" : "7817079999",\r
+  "email" : "test@rsli.com",\r
+  "hasAgeBanded" : false,\r
+  "hasGenderBanded" : false,\r
+  "coveragesCount" : 2,\r
+  "vciEligible" : "No Answer",\r
+  "tobaccoInformation" : {\r
+    "isTobaccoUser" : false,\r
+    "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+    "tobaccoUseInLastYear" : false\r
+  },\r
+  "employmentInformation" : {\r
+    "annualSalary" : 10000.0,\r
+    "status" : "Active",\r
+    "dateOfHire" : "2015-07-20T15:49:04-07:00",\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00"\r
+  },\r
+  "customerInformation" : {\r
+    "customerAccountNumber" : "0459084",\r
+    "billGroupNumber" : "01000001",\r
+    "billGroupName" : "Testing BG Data 1",\r
+    "locationDivisionNumber" : "CFI",\r
+    "locationDivisionName" : "CFI",\r
+    "departmentNumber" : "CFI",\r
+    "departmentName" : "CFI",\r
+    "situsState" : "CA"\r
+  },\r
+  "dependents" : [ {\r
+    "dependentIdentifier" : "0",\r
+    "dependentName" : {\r
+      "firstName" : "Test ",\r
+      "middleName" : "OT",\r
+      "lastName" : "Reddy"\r
+    },\r
+    "relationship" : "Spouse",\r
+    "dateOfBirth" : "2015-07-20T15:49:04-07:00",\r
+    "gender" : "Female",\r
+    "isTerminated" : false,\r
+    "vciEligible" : "NoAnswer",\r
+    "tobaccoInformation" : {\r
+      "isTobaccoUser" : false,\r
+      "tobaccoFreeFromDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoFreeToDate" : "2015-07-20T15:49:04-07:00",\r
+      "tobaccoUseInLastYear" : false\r
+    }\r
+  } ],\r
+  "elections" : [ {\r
+    "electionIdentifier" : 2818353,\r
+    "policyNumber" : "GL156865",\r
+    "classCode" : "1",\r
+    "coverageCode" : "01",\r
+    "coverageName" : "Basic Life",\r
+    "displayCoverageName" : "Voluntary Term Life",\r
+    "vcType" : "Employee",\r
+    "planType" : "Core",\r
+    "scheduleType" : "Salary Multiplier",\r
+    "benefitAmount" : 10000.0,\r
+    "effectiveDate" : "2015-07-20T15:49:04-07:00",\r
+    "electionDate" : "2015-07-20T15:49:04-07:00",\r
+    "salaryFactor" : 1.0,\r
+    "terminationDate" : "2015-07-20T15:49:04-07:00",\r
+    "subPlan" : "Plan A",\r
+    "appliesTo" : "Employee Family",\r
+    "status" : "Active",\r
+    "premiumAmount" : 10.81,\r
+    "employeeType" : "No Differentiation",\r
+    "lifeEventType" : "null",\r
+    "lifeEventDate" : "2015-07-20T15:49:04-07:00",\r
+    "employeeEffectiveDateRule" : "Present: The Date Future: None",\r
+    "individualTerminationDateRule" : "The Date",\r
+    "serviceWaitingPeriodOption" : "None"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

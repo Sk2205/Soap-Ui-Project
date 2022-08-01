@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8f016039-c054-480a-9054-61c99cdf9497" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TC_01" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [/er/api/v1/plans/choices] located at [/er/api/v1/plans/choices]</con:description>
+  <con:settings>
+    <con:setting id="8f016039-c054-480a-9054-61c99cdf9497fileName">TC_01</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source" id="35d13e27-8cf3-4359-890c-9cf48e8d2cd6">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Excel">
+        <con:configuration>
+          <file>C:/Users/205ks09/Desktop/TestData/MemberManagement/MemberManagement.xlsx</file>
+          <worksheet>Coverages-GET coverageDetails</worksheet>
+          <cell>A1</cell>
+          <ignoreEmpty>false</ignoreEmpty>
+          <evaluateFormulas>false</evaluateFormulas>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>Title</con:property>
+      <con:property>Customer No</con:property>
+      <con:property>ExpectedStatusCode</con:property>
+      <con:property>EmployeId</con:property>
+      <con:property>BillGroupMember</con:property>
+      <con:property>Active</con:property>
+      <con:property>Terminated</con:property>
+      <con:property>Eligible</con:property>
+      <con:startRow>1</con:startRow>
+      <con:endRow>15</con:endRow>
+      <con:recordsPerIteration>1</con:recordsPerIteration>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:trimValues>false</con:trimValues>
+      <con:entitizeValues>false</con:entitizeValues>
+      <con:restartOnRun>true</con:restartOnRun>
+      <con:expandProperties>false</con:expandProperties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="UserToken" id="b2043da3-b0f5-414f-a3c7-c22e1e303aec">
+    <con:settings/>
+    <con:config service="Main API v1.0" resourcePath="/api/GetToken" methodName="GetToken" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="UserToken" id="bca28d63-e6ea-4531-b96a-695bede63da1" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint xsi:nil="true"/>
+        <con:request>{\r
+   "emailAddress" : "${#Project#Email}",\r
+   "password" : "${#Project#password}"\r
+}</con:request>
+        <con:originalUri>https://qa1-userauthapi.rsli.com/api/GetToken</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="741f354f-31b9-4a96-a952-c257faa08fb7" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="d55ed466-acd7-483a-9f01-307fb9d2927b" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder>
+          <con:entry>alg</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1" id="850a1a11-b064-4b41-b60f-41636b0549d7">
+    <con:settings/>
+    <con:config service="Member Management Service API" resourcePath="/er/api/v1/plans/choices" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="ab51a714-e123-4c8e-8533-1e3e2a7bcdce" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="${UserToken#Response}" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://qa1-userauthapi.rsli.com/er/api/v1/plans/choices</con:originalUri>
+        <con:assertion type="Response SLA Assertion" id="151a20c8-852e-4f79-952e-87bd72e6c658" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="BillGroupNumber" value="${Data Source#BillGroupMember}"/>
+          <con:entry key="eligible" value="${Data Source#Eligible}"/>
+          <con:entry key="active" value="${Data Source#Active}"/>
+          <con:entry key="EmployeeIdentifier" value="${Data Source#EmployeId}"/>
+          <con:entry key="terminated" value="${Data Source#Terminated}"/>
+        </con:parameters>
+        <con:environmentSpec>
+          <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+            <con:authProfile>abcd</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+          <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="Database Validation" id="580b186b-fea0-4a09-8ffe-d9e320cb7d73">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>Oracle Database</con:dbConnectionName>
+      <con:driver xsi:nil="true"/>
+      <con:connectionString xsi:nil="true"/>
+      <con:password/>
+      <con:connectionProperties/>
+      <con:query>Select * from insured where insured id ='${Request 1#Response}'</con:query>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Data Sink" id="1065a4b9-7785-4840-b8fc-a43cb1c616db">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="Excel">
+        <con:configuration>
+          <file/>
+          <outfile>C:/Users/205ks09/Downloads/GET ALL Employees.xlsx</outfile>
+          <worksheet>sheet5</worksheet>
+          <cell>A1</cell>
+          <evaluateFormulas>false</evaluateFormulas>
+          <append>false</append>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>testcase</con:name>
+          <con:value>${Data Source#Title}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>response</con:name>
+          <con:value>${Request 1#Response}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="9ec25b5f-7a73-4b0b-b106-37606bc7281e">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>Request 1</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

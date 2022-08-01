@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="ebdd4434-645e-419f-acaa-2f25adea4063" name="My TestSuite" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test suite generated for the REST service [Member Management Service API]</con:description>
+  <con:settings>
+    <con:setting id="ebdd4434-645e-419f-acaa-2f25adea4063fileName">My-TestSuite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>

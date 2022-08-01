@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/er/api/v1/notifications/email" path="/er/api/v1/notifications/email" id="b3a9bfac-2d9c-422b-adfc-3a0ce8b04de5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b3a9bfac-2d9c-422b-adfc-3a0ce8b04de5fileName">%2Fer%2Fapi%2Fv1%2Fnotifications%2Femail</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="a832237d-9e6f-4ed8-8fcc-a06a450b6e6e" method="POST">
+    <con:description>Send EOI Email</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "notificationStatus" : "string",
+  "acknowledgementID" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "notificationStatus" : "string",
+  "acknowledgementID" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:description>Not Found</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "entityID" : "212345",
+  "carrier" : "",
+  "delivery" : "Email",
+  "email" : {
+    "emailAddresses" : {
+      "toAddress" : [ {
+        "name" : "Test Receipient",
+        "address" : "testreceipient@testmail.com"
+      } ]
+    }
+  },
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "entityID" : "212345",
+  "carrier" : "",
+  "delivery" : "Email",
+  "email" : {
+    "emailAddresses" : {
+      "toAddress" : [ {
+        "name" : "Test Receipient",
+        "address" : "testreceipient@testmail.com"
+      } ]
+    }
+  },
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "entityID" : "212345",
+  "carrier" : "",
+  "delivery" : "Email",
+  "email" : {
+    "emailAddresses" : {
+      "toAddress" : [ {
+        "name" : "Test Receipient",
+        "address" : "testreceipient@testmail.com"
+      } ]
+    }
+  },
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "entityID" : "212345",
+  "carrier" : "",
+  "delivery" : "Email",
+  "email" : {
+    "emailAddresses" : {
+      "toAddress" : [ {
+        "name" : "Test Receipient",
+        "address" : "testreceipient@testmail.com"
+      } ]
+    }
+  },
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="a7f23c8a-d15a-4a43-9a5e-3bca7eceda80" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "entityID" : "212345",\r
+  "carrier" : "",\r
+  "delivery" : "Email",\r
+  "email" : {\r
+    "emailAddresses" : {\r
+      "toAddress" : [ {\r
+        "name" : "Test Receipient",\r
+        "address" : "testreceipient@testmail.com"\r
+      } ]\r
+    }\r
+  },\r
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="db67abc0-4157-4557-9a77-f0ebf0dace2d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "entityID" : "212345",\r
+  "carrier" : "",\r
+  "delivery" : "Email",\r
+  "email" : {\r
+    "emailAddresses" : {\r
+      "toAddress" : [ {\r
+        "name" : "Test Receipient",\r
+        "address" : "testreceipient@testmail.com"\r
+      } ]\r
+    }\r
+  },\r
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="6914e5d0-4d53-424c-bb63-993ac2ba6b84" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "entityID" : "212345",\r
+  "carrier" : "",\r
+  "delivery" : "Email",\r
+  "email" : {\r
+    "emailAddresses" : {\r
+      "toAddress" : [ {\r
+        "name" : "Test Receipient",\r
+        "address" : "testreceipient@testmail.com"\r
+      } ]\r
+    }\r
+  },\r
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="941e57f6-540b-4973-85ff-89baa067d9eb" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "entityID" : "212345",\r
+  "carrier" : "",\r
+  "delivery" : "Email",\r
+  "email" : {\r
+    "emailAddresses" : {\r
+      "toAddress" : [ {\r
+        "name" : "Test Receipient",\r
+        "address" : "testreceipient@testmail.com"\r
+      } ]\r
+    }\r
+  },\r
+  "templateID" : "6d0b46da-d7bf-4b7f-b9a0-ea702ee0097e"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

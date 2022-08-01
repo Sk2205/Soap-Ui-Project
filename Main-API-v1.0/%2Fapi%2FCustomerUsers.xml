@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/CustomerUsers" path="/api/CustomerUsers" id="ef722970-96d9-416e-b4f1-3ec80a163be3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ef722970-96d9-416e-b4f1-3ec80a163be3fileName">%2Fapi%2FCustomerUsers</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GetCustomersByAccountNumber" id="a47d6e40-2fda-491c-81d1-7d0c72ebdd53" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>customerNumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>orgId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="07e1fccd-0d56-4bd3-b181-513fc9f9ab51" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="CreateCustomerUsersAccount" id="e7016c12-50a0-482f-b4a9-ff0a4e05863a" method="POST">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>inviteType</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "userType" : "string",
+  "emailAddress" : "string",
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "userType" : "string",
+  "emailAddress" : "string",
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "userType" : "string",
+  "emailAddress" : "string",
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "userType" : "string",
+  "emailAddress" : "string",
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e3231684-eb69-45f0-be4f-3aa82708b933" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "userType" : "string",\r
+  "emailAddress" : "string",\r
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>inviteType</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="3c4680a2-be6a-4a61-bea7-54f33aa4b17f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "userType" : "string",\r
+  "emailAddress" : "string",\r
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>inviteType</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="8b2eb8fe-1a86-4612-977f-cc8948d90eb0" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "userType" : "string",\r
+  "emailAddress" : "string",\r
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>inviteType</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="5de8d1ec-f507-4ba1-a317-f3120d29d7b2" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "userType" : "string",\r
+  "emailAddress" : "string",\r
+  "registrationCodeExpirationDate" : "2015-07-20T15:49:04-07:00",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>inviteType</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="UpdateCustomerUsersAccount" id="0cdb7122-35b8-47d3-ad5d-736d992ea9b8" method="PUT">
+    <con:description/>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "rsluId" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "emailAddress" : "string",
+  "status" : "string",
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",
+  "isEmailVerified" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "rsluId" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "emailAddress" : "string",
+  "status" : "string",
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",
+  "isEmailVerified" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "rsluId" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "emailAddress" : "string",
+  "status" : "string",
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",
+  "isEmailVerified" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "lastName" : "string",
+  "firstName" : "string",
+  "rsluId" : "string",
+  "orgId" : "string",
+  "customerNumber" : "string",
+  "emailAddress" : "string",
+  "status" : "string",
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",
+  "isEmailVerified" : "string",
+  "permissions" : [ {
+    "name" : "string",
+    "parameterValue" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="fddbeef4-9980-4679-8b78-9b1e77cbb89b" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "rsluId" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "emailAddress" : "string",\r
+  "status" : "string",\r
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",\r
+  "isEmailVerified" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="f7664455-9df3-46ea-b119-1a54981d7126" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "rsluId" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "emailAddress" : "string",\r
+  "status" : "string",\r
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",\r
+  "isEmailVerified" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="115379ac-370d-46d9-8201-b22d0cd1716a" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "rsluId" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "emailAddress" : "string",\r
+  "status" : "string",\r
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",\r
+  "isEmailVerified" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="3e8ba9fa-db5f-4dd9-aa4e-5708d1a81c11" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>https://qa1-userauthapi.rsli.com</con:endpoint>
+      <con:request>{\r
+  "lastName" : "string",\r
+  "firstName" : "string",\r
+  "rsluId" : "string",\r
+  "orgId" : "string",\r
+  "customerNumber" : "string",\r
+  "emailAddress" : "string",\r
+  "status" : "string",\r
+  "terminatedDate" : "2015-07-20T15:49:04-07:00",\r
+  "isEmailVerified" : "string",\r
+  "permissions" : [ {\r
+    "name" : "string",\r
+    "parameterValue" : "string"\r
+  } ]\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

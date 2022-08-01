@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/er/api/v1/powerforms" path="/er/api/v1/powerforms" id="888d78b7-de1a-4803-9203-a717a1137a39" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="888d78b7-de1a-4803-9203-a717a1137a39fileName">%2Fer%2Fapi%2Fv1%2Fpowerforms</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="dfa7d51e-d54a-4b78-a44d-f49d37476188" method="POST">
+    <con:description>Create Powerform link</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "powerFormID" : "256",
+  "customerAccountNumber" : "0130936",
+  "powerFormLinkURL" : "https://sdk.cod",
+  "carrierName" : "RSLT",
+  "fullCarrierName" : "Reliance Standard Life of Texas",
+  "carrierContact" : "1-800-351-7500"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>Success</con:description>
+      <con:sampleContent>{
+  "powerFormID" : "256",
+  "customerAccountNumber" : "0130936",
+  "powerFormLinkURL" : "https://sdk.cod",
+  "carrierName" : "RSLT",
+  "fullCarrierName" : "Reliance Standard Life of Texas",
+  "carrierContact" : "1-800-351-7500"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:description>Bad Request</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+      <con:description>Request Timeout</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+      <con:description>Server Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:description>Client Error</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/plain</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:description>Unauthorized</con:description>
+      <con:sampleContent>{
+  "responseCode" : 0,
+  "errors" : [ {
+    "errorCode" : "string",
+    "category" : "string",
+    "bussinessMessage" : "string",
+    "systemMessage" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json-patch+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "customerAccountNumber" : "0130936",
+  "powerFormLink" : "https://sdk.cod",
+  "carrierName" : "RSL"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "customerAccountNumber" : "0130936",
+  "powerFormLink" : "https://sdk.cod",
+  "carrierName" : "RSL"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "customerAccountNumber" : "0130936",
+  "powerFormLink" : "https://sdk.cod",
+  "carrierName" : "RSL"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/*+json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "customerAccountNumber" : "0130936",
+  "powerFormLink" : "https://sdk.cod",
+  "carrierName" : "RSL"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="afd61769-d3c9-462c-8248-e6529c634ce0" mediaType="application/json-patch+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "customerAccountNumber" : "0130936",\r
+  "powerFormLink" : "https://sdk.cod",\r
+  "carrierName" : "RSL"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="8ffee322-39c4-4902-825f-c25ea834db2a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "customerAccountNumber" : "0130936",\r
+  "powerFormLink" : "https://sdk.cod",\r
+  "carrierName" : "RSL"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 3" id="ddc82432-90e0-4185-b99a-319606aa6c46" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "customerAccountNumber" : "0130936",\r
+  "powerFormLink" : "https://sdk.cod",\r
+  "carrierName" : "RSL"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 4" id="a012274a-b4fb-475c-b707-38c9f7ebadfb" mediaType="application/*+json">
+      <con:settings/>
+      <con:endpoint>http://a253fea48e86b480fab0422d2ed1be5b-11ed742def813820.elb.us-east-1.amazonaws.com/</con:endpoint>
+      <con:request>{\r
+  "customerAccountNumber" : "0130936",\r
+  "powerFormLink" : "https://sdk.cod",\r
+  "carrierName" : "RSL"\r
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+      <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="00d72575-c8a7-4471-a5e7-7258f3ebadc6">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="6d84ecd5-42f3-4889-b2e8-7fa85774dc23">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+    <con:entry environmentId="0c764767-b2cf-47b1-a131-681d603c46b2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>
