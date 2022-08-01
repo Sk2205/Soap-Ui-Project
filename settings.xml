@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="3c066487-e414-4c6b-b2cd-cdb28135cf20" created="3.40.1" activeEnvironment="UAT Env" name="Project 1" updated="3.40.1" encryptionMode="Not encrypted" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+  <con:settings>
+    <con:setting id="3c066487-e414-4c6b-b2cd-cdb28135cf20fileName">Project-1-readyapi-project</con:setting>
+  </con:settings>
   <con:requirements/>
   <con:properties>
     <con:property>
